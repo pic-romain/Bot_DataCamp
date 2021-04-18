@@ -51,7 +51,7 @@ for i in list(range(3)[::-1]): # countdown to let 3s to select the right window
 
 while not(keyboard.is_pressed('q')): # you can press q to leave the loop at any time
     while not(keyboard.is_pressed('q')):
-        if pyautogui.locateOnScreen('try_code.png',confidence=0.8)!=None: #if it encounters a question that need a text answer
+        if pyautogui.locateOnScreen('interrupt.png',confidence=0.8)!=None: #if it encounters a question that need a text answer
             # reloading the page and waiting before launching the next questions
             pyautogui.press('F5')
             time.sleep(2)
@@ -60,7 +60,7 @@ while not(keyboard.is_pressed('q')): # you can press q to leave the loop at any 
             # pressing the keys to answers
             pyautogui.keyDown('2')
             pyautogui.keyDown('1')
-            if pyautogui.locateOnScreen('try_code.png',confidence=0.8)==None: #if it is not a question that need a text answer
+            if pyautogui.locateOnScreen('interrupt.png',confidence=0.8)==None: #if it is not a question that need a text answer
                 double_click(x_pos,y_pos,delay) 
             time.sleep(delay)
 
