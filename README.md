@@ -21,7 +21,9 @@ In order to use my bot, you need to enter the coordinates corresponding to the p
 
 The bot start by a count down in order to let you select the browser and then you can leave the while-loop by pressing "Q".
 
-N.B. : * My setup is composed of two monitors and apparently there is an [issue](https://github.com/asweigart/pyautogui/issues/321) when using locateOnScreen to detect an image on the second monitor. 
+N.B. : 
+
+* My setup is composed of two monitors and apparently there is an [issue](https://github.com/asweigart/pyautogui/issues/321) when using locateOnScreen to detect an image on the second monitor. 
 * The shortcut where the one on my AZERTY keyboard for Windows, these may need to ne changed for other configurations.
 
 ### Ideas for improvement :
